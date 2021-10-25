@@ -1,0 +1,19 @@
+form{
+    border: 1px solid #333;
+    padding: 30px;
+    width: 70%;
+    margin: 50px auto;
+    height: 60vh;
+    h3{
+        text-align: center;
+    }
+    label,input{
+        width: 60%;
+        margin: auto;
+        display: block;
+        outline: none;
+    }
+    .submit{
+        margin-top: 100px;
+    }
+}

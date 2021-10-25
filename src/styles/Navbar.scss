@@ -1,0 +1,89 @@
+$color_primary : rgb(137, 76, 177);
+$color_secondary : rgb(247, 146, 240); 
+$transition : .5s color;
+.navbar{
+    .logo{
+        
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+            transition: $transition;
+            color: $color_primary;
+            font-size: 2rem;
+            font-weight: bold;
+            &:hover{
+                color: $color_secondary;
+            }
+
+        }
+    }
+    .btn-style{
+        background-color: $color_primary;
+        color: $color_secondary;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 1;
+        border: none;
+        transition: $transition;
+       
+    }
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        line-height: 3;
+        width: 70%;
+        margin-left: auto;
+        height: 50px;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: $color_primary;
+                transition: $transition;
+                font-size: 1.1rem;
+                font-weight: bold;
+                &:hover{
+                    color: $color_secondary;
+                }
+            }
+        }
+    }
+    .nav-list-hidden{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        line-height: 4;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(27, 27, 27);
+        animation: animate1 0.5s ease-in-out;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: $color_primary;
+                transition: $transition;
+                &:hover{
+                    color: $color_secondary;
+                }
+            }
+        }
+    }
+    @keyframes animate1 {
+        from{
+
+            height: 0;
+            opacity: 0;
+        }
+        to{
+
+            height: 300px;
+            opacity: 1;
+        }
+        
+    }
+   
+}

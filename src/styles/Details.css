@@ -1,0 +1,37 @@
+.marginTop {
+  margin-top: 100px;
+}
+
+.left {
+  padding: 30px;
+}
+
+.left h4 {
+  font-weight: bold;
+}
+
+.right img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.btn-style {
+  margin: 20px auto;
+  background-color: #b12199;
+  color: #fff;
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: .5s background-color ease-in-out;
+  transition: .5s background-color ease-in-out;
+}
+
+.btn-style:hover {
+  background-color: #3d0333;
+}
+/*# sourceMappingURL=Details.css.map */

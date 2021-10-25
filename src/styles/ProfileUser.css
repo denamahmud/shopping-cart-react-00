@@ -1,0 +1,23 @@
+form {
+  border: 1px solid #333;
+  padding: 30px;
+  width: 70%;
+  margin: 50px auto;
+  height: 60vh;
+}
+
+form h3 {
+  text-align: center;
+}
+
+form label, form input {
+  width: 60%;
+  margin: auto;
+  display: block;
+  outline: none;
+}
+
+form .submit {
+  margin-top: 100px;
+}
+/*# sourceMappingURL=ProfileUser.css.map */
