@@ -10,17 +10,19 @@ const CartState = ({children}) => {
         cartItems: []
     }
     const [state, dispatch] = useReducer(CartReducer, initialState)
-    const addToCart = item => {
-        dispatch({ type: ADD_TO_CART,
-            payLoad: item
-        })
-        
-    }
     
+    console.log("state.cartItem", state.cartItems)
+
+    const addToCart = item => {
+        dispatch({ 
+            type: ADD_TO_CART,
+            payload: item
+        })
+    }
 
     const removeItem = id => {
         dispatch({ type: REMOVE_ITEM,
-            payLoad: id
+            payload: id
         })
     }
 

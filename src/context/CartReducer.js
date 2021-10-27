@@ -8,15 +8,15 @@ const CartReducer = (state, action) => {
         case ADD_TO_CART: {
             return {
                 ...state,
-                cartItems: [...state.cartItems, action.payLoad],
+                cartItems: [...state.cartItems, action.payload],
+               
             };
-           
             
         }
         case REMOVE_ITEM: {
             return {
                 ...state,
-                cartItems: state.cartItems.filter(item => item.id !== action.payLoad),
+                cartItems: state.cartItems.filter(item => item.id !== action.payload),
             };
         }
         default:

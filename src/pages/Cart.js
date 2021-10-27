@@ -1,40 +1,39 @@
-import React, {useContext} from 'react'
+import React, {Fragment, useContext} from 'react'
 import { Col } from 'react-bootstrap'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import CartContext from '../context/CartContext'
 
 const Cart = () => {
 
-    const { CartItems } = useContext(CartContext)
+    const { cartItems } = useContext(CartContext)
+    const { removeItem } = useContext(CartContext)
+
+    console.log("cart cartItems", cartItems)
+
+    const style = {
+        width: '50px'
+    }
+    const mapping = cartItems.length ? cartItems.map(item => {
+        return <Col ex={12} md={2}>
+            <div key={item.id}>
+                <img src={item.image} alt={item.title} style={style}/>
+                <h3>{item.title}</h3>
+                <p>{item.price}</p>
+                <button onClick={() => removeItem(item.id)}>remove</button>
+            </div>
+        </Col>
+    }) : []
 
     return (
       
-                <Col ex={12} md={2}>
-             
+        <Fragment>
+            <Navbar/>
 
-                    <div>
-                  
+                {mapping}
 
-                    {CartItems.length === 0 ? (<h4>Cart is Empty</h4>) : (
-                        
-                        <div>
-                            
-                            {CartItems.map(item => {
-
-                              
-                               <CartItems key={item.id} item={item}/>
-
-                                
-                            })}
-                        </div>
-                    )    
-                    }
-                    </div>
-         
-
- 
- 
-            
-                </Col>
+            <Footer/>
+        </Fragment>
   
         )
     

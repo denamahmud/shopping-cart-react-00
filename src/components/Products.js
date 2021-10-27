@@ -7,7 +7,6 @@ import styled from 'styled-components'
 import Navbar from './Navbar'
 import Search from './Search'
 import CartContext from '../context/CartContext'
-import Cart from '../pages/Cart'
 
 
 
@@ -15,6 +14,7 @@ const Products = (props) => {
 
 
     const { addToCart } = useContext(CartContext)
+
     
     const IMG = styled.div `
        width : 150px;
@@ -44,34 +44,35 @@ const Products = (props) => {
         ){
             return value
         }
+   
     
 
     }).map(item => {
         return (
             
-                <Col md={4}>
-                    <div className="product-item" key={item.id}>
-                    
-                        <h4>
-                            {item.title}
-
-                        </h4>
-                        <p>
-                            ${item.price}
-                        </p>
-                        <IMG>
-                        <img src={item.image} alt={item.title} className="img-style"/>
-                        </IMG>
-                    
-                        <button>
-                            <Link to={`/details/${item.id}`}>Details</Link>
-                        </button>
-                        
-                        <AddToCart addToCart={() => addToCart(item)}/>
-                      
+            <Col md={4}>
+                <div className="product-item" key={item.id}>
                 
-                    </div>
-                </Col>
+                    <h4>
+                        {item.title}
+
+                    </h4>
+                    <p>
+                        ${item.price}
+                    </p>
+                    <IMG>
+                    <img src={item.image} alt={item.title} className="img-style"/>
+                    </IMG>
+                
+                    <button>
+                        <Link to={`/${item.id}`}>Details</Link>
+                    </button>
+                    
+                    <AddToCart addToCart={() => addToCart(item)}/>
+                    
+            
+                </div>
+            </Col>
             
            
         )
@@ -81,15 +82,15 @@ const Products = (props) => {
             <Navbar counter={counter}/>
             
             <div className="products">
-                <Container>
-                    <Row>
-                    <Search search={setSearchTitle}/>
-                    
+            <Container>
+                <Row>
+                <Search search={setSearchTitle}/>
+                
                     <div className="products-content">
                         {productsUI}
                         
                     </div>
-                    </Row>
+                </Row>
             </Container>
             </div>
         </div>

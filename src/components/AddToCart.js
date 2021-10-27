@@ -9,7 +9,7 @@ const AddToCart = (props) => {
     return (
 
         <Fragment>
-            <button className="btn-style" onClick={() => addToCart()}>Add To Cart</button>
+            <button className="btn-style" onClick={addToCart}>Add To Cart</button>
         </Fragment>
     )
 }

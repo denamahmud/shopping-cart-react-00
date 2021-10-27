@@ -1,13 +1,15 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import AddToCart from '../components/AddToCart'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import '../styles/Details.css'
+import CartContext from '../context/CartContext'
 
 const Details = ({match}) => {
 
-    
+    const { addToCart } = useContext(CartContext)
+
     useEffect(() => {
 
         fetchItems()
@@ -26,10 +28,7 @@ const Details = ({match}) => {
     const [counter, setCounter] = useState(0)
 
     
-    function addToCart(product){
-        setItem(product)
-        setCounter(counter + 1)
-    }
+
     return (
         <div>
             <Navbar counter={counter}/>

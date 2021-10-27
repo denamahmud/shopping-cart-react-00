@@ -67,7 +67,9 @@ const Navbar = ({counter}) => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="cart">
                                     <CartIcon counter={cartItems.length}/>
+                                </Link>
                               
                             </li>
                             <li>
@@ -101,7 +103,9 @@ const Navbar = ({counter}) => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="cart">
                                     <CartIcon counter={cartItems.length}/>
+                                </Link>
                                 
                             </li>
                             <li>
