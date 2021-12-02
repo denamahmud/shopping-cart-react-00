@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 import { Col, Container, Row} from 'react-bootstrap'
 import '../styles/products.css'
 import AddToCart from './AddToCart'
@@ -12,6 +12,23 @@ import CartContext from '../context/CartContext'
 
 const Products = (props) => {
 
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+       try{
+           fetchItems()
+       }catch(error){
+           console.log(error)
+       }
+       
+    }, [])
+    
+    const fetchItems = async () => {
+    
+        const data = await fetch('https://fakestoreapi.com/products')
+        const items = await data.json()
+        setProducts(items)  
+    }
 
     const { addToCart } = useContext(CartContext)
 
@@ -23,7 +40,6 @@ const Products = (props) => {
     
     `
 
-    const { products } = props
 
     const [state, setState] = useState([])
     const [counter, setCounter] = useState(0)
@@ -65,7 +81,7 @@ const Products = (props) => {
                     </IMG>
                 
                     <button>
-                        <Link to={`/${item.id}`}>Details</Link>
+                        <Link to={`/products/${item.id}`}>Details</Link>
                     </button>
                     
                     <AddToCart addToCart={() => addToCart(item)}/>

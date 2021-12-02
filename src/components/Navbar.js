@@ -57,6 +57,11 @@ const Navbar = ({counter}) => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="/products">
+                                    Products
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="about">
                                     About Us
                                 </Link>
@@ -93,6 +98,11 @@ const Navbar = ({counter}) => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="/products">
+                                    Products
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="about">
                                     About Us
                                 </Link>
@@ -110,7 +120,7 @@ const Navbar = ({counter}) => {
                             </li>
                             <li>
                                 <Link to="profile-user">
-                                    User
+                                    {name ? <div>{name}</div> : <div>User</div>}
                                 </Link>
                             </li>
                           

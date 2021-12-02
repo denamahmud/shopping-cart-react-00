@@ -1,7 +1,6 @@
 import React, {Fragment, useContext} from 'react'
 import { Col } from 'react-bootstrap'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import CartContext from '../context/CartContext'
 
 const Cart = () => {
@@ -32,7 +31,6 @@ const Cart = () => {
 
                 {mapping}
 
-            <Footer/>
         </Fragment>
   
         )

@@ -1,7 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import AddToCart from '../components/AddToCart'
-import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import '../styles/Details.css'
 import CartContext from '../context/CartContext'
@@ -50,7 +49,6 @@ const Details = ({match}) => {
                     </Col>
                 </Row>
             </Container>
-            <Footer/>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import '../styles/ProfileUser.css'
 
 const ProfileUse = () => {
@@ -73,7 +72,6 @@ const ProfileUse = () => {
             <input type="submit" className="submit"/>
 
             </form>}
-            <Footer/>
         </div>
     )
 }

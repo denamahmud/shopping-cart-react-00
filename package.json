@@ -1,5 +1,5 @@
 {
-  "homepage": "https://denamahmud.github.io/ShoppingCartProject01",
+  "homepage": "https://github.com/denamahmud/shopping-cart-react-00.git",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,6 @@
     "axios": "^0.23.0",
     "bootstrap": "^5.1.1",
     "build": "^0.1.4",
-    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.1",
     "react-dom": "^17.0.2",
@@ -24,6 +23,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -47,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
