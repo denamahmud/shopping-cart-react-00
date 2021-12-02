@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/denamahmud/shopping-cart-react-00.git/static/css/main.c849e0fa.chunk.css",
+    "main.js": "/denamahmud/shopping-cart-react-00.git/static/js/main.f03e5a36.chunk.js",
+    "main.js.map": "/denamahmud/shopping-cart-react-00.git/static/js/main.f03e5a36.chunk.js.map",
+    "runtime-main.js": "/denamahmud/shopping-cart-react-00.git/static/js/runtime-main.6c9d172b.js",
+    "runtime-main.js.map": "/denamahmud/shopping-cart-react-00.git/static/js/runtime-main.6c9d172b.js.map",
+    "static/css/2.28bb0c3d.chunk.css": "/denamahmud/shopping-cart-react-00.git/static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.af39dc95.chunk.js": "/denamahmud/shopping-cart-react-00.git/static/js/2.af39dc95.chunk.js",
+    "static/js/2.af39dc95.chunk.js.map": "/denamahmud/shopping-cart-react-00.git/static/js/2.af39dc95.chunk.js.map",
+    "index.html": "/denamahmud/shopping-cart-react-00.git/index.html",
+    "static/css/2.28bb0c3d.chunk.css.map": "/denamahmud/shopping-cart-react-00.git/static/css/2.28bb0c3d.chunk.css.map",
+    "static/css/main.c849e0fa.chunk.css.map": "/denamahmud/shopping-cart-react-00.git/static/css/main.c849e0fa.chunk.css.map",
+    "static/js/2.af39dc95.chunk.js.LICENSE.txt": "/denamahmud/shopping-cart-react-00.git/static/js/2.af39dc95.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c9d172b.js",
+    "static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.af39dc95.chunk.js",
+    "static/css/main.c849e0fa.chunk.css",
+    "static/js/main.f03e5a36.chunk.js"
+  ]
+}
