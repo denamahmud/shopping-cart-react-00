@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { HashRouter , Route, Switch } from "react-router-dom";
+import { HashRouter , Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ProfileUse from "./pages/ProfileUse";
 import About from "./pages/About";
@@ -19,7 +19,7 @@ class App extends Component{
          
             <HashRouter>
                 <div className="App">
-                    <Switch>
+                    <Routes>
                         <Route path="/" component={Home} exact/>
                         <Route path="/about" component={About}/>
                         <Route path="/cart" component={Cart}/>
@@ -27,7 +27,7 @@ class App extends Component{
                         <Route path="/products" component={Products} exact/>
                         <Route path="/products/:id" component={Details}/>
                         <Route path="/profile-user" component={ProfileUse}/>
-                    </Switch>
+                    </Routes>
                     <Footer/>
                 </div>
             </HashRouter>
