@@ -1,16 +1,30 @@
-import React, { Fragment } from 'react'
+import { HiPlus } from 'react-icons/hi';
 
 const AddToCart = (props) => {
 
     const { addToCart } = props
 
+    const btnStyle = {
+        textDecoration: "none",
+        fontSize: "1rem",
+        color : '#502f4c',
+        backgroundColor : "#c8b8db",
+        border :"none",
+        borderRadius : "30px"
+    
+    }
+
   
+
     
     return (
 
-        <Fragment>
-            <button className="btn-style" onClick={addToCart}>Add To Cart</button>
-        </Fragment>
+        <>
+            {
+                <button style={ btnStyle } onClick={addToCart}> add to cart <HiPlus/></button>
+            }
+           
+        </>
     )
 }
 

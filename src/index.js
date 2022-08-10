@@ -6,10 +6,8 @@ import CartState from './context/CartState'
 
 ReactDOM.render(
   <React.StrictMode>
-
     <CartState>
-
-        <App />
+      <App />
     </CartState>
   </React.StrictMode>,
   document.getElementById('root')
